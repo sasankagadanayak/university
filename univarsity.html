@@ -2,22 +2,52 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
   <title>Univaersity</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body id="top">
   <!-- header -->
   <header>
     <div class="top-header">
       <div class="wrapper cf">
+        <div class="toggle" id="navToggle" onclick="myfunction(this)">
+          <div class="toggle1"></div>
+          <div class="toggle2"></div>
+          <div class="toggle3"></div>
+        </a>
+        </div>
         <ul class="top-nav cf">
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Portpolio</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Courses</a></li>
-          <li><a href="#">Members</a></li>
+          <li><a href="#">Blog</a>
+            <ul class="submenu">
+              <li><a href="#">Blog Single</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Portfolio</a>
+            <ul class="submenu">
+              <li><a href="#">Portfolio single</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Events</a>
+            <ul class="submenu">
+              <li><a href="#">Events List</a></li>
+              <li><a href="#">Events Single</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Courses</a>
+            <ul class="submenu">
+              <li><a href="#">Courses List</a></li>
+              <li><a href="#">Courses Single</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Members</a>
+            <ul class="submenu">
+              <li><a href="#">Members List</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </li>
         </ul>
         <ul class="social-icons cf">
           <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -29,10 +59,10 @@
     </div>
     <div class="bottom-header">
       <div class="wrapper flex">
-        <a class="logo">
+        <a class="logo" href="index.html">
           <img src="img/logo.jpg" alt="Logo">
         </a>
-        <nav class="main-nav">
+        <nav class="main-nav" id="mobileNav">
           <ul class="cf">
             <li><a href="#">Home<br><span>All Variations</span></a></li>
             <li><a href="#">Events<br><span>Our Activities</span></a></li>
@@ -222,29 +252,31 @@
     <!-- blogs-->
     <div class="blogs-outer">
       <div class="wrapper cf">
-        <div class="choose-us cf">
+        <div class="choose-us">
           <h2>Why Choose Us</h2>
-          <h6>Build Your Own Homepage With Visual Composer</h6>
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantiumdoloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sitaspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-          <div class="accordian">
-            <h3>Clean, Beautiful And Responsive Design</h3>
-            <h4>+</h4>
+          <button class="accordionBtn">Build Your Own Homepage With Visual Composer</button>
+          <div class="main-panel">
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantiumdoloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sitaspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
           </div>
-          <div class="accordian">
-            <h3>U-Event Plugin Allow You To Sell Ticket</h3>
-            <h4>+</h4>
+          <button class="accordion">Clean, Beautiful And Responsive Design</button>
+          <div class="panel">
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantiumdoloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sitaspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
           </div>
-          <div class="accordian">
-            <h3>Sell Courses With U-Course Plugin</h3>
-            <h4>+</h4>
+          <button class="accordion">U-Event Plugin Allow You To Sell Ticket</button>
+          <div class="panel">
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantiumdoloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sitaspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
           </div>
-          <div class="accordian">
-            <h3>Shop Version Available With Woo Commerce Integrated</h3>
-            <h4>+</h4>
+          <button class="accordion">Sell Courses With U-Course Plugin</button>
+          <div class="panel">
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantiumdoloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sitaspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
           </div>
-          <div class="accordian">
-            <h3>Professional Look and Feel For Your Business</h3>
-            <h4>+</h4>
+          <button class="accordion">Shop Version Available With Woo Commerce Integrated</button>
+          <div class="panel">
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantiumdoloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sitaspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+          </div>
+          <button class="accordion">Professional Look and Feel For Your Business</button>
+          <div class="panel">
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantiumdoloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sitaspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
           </div>
         </div>
 
@@ -322,7 +354,7 @@
       <div class="research cf">
         <div class="inner">
           <div class="img">
-            <img src="img/research.jpg" alt="research">
+            <i class="fa fa-cube" aria-hidden="true"></i>
           </div>
           <div class="content">
             <h3>Research</h3>
@@ -331,7 +363,7 @@
         </div>
         <div class="inner">
           <div class="img">
-            <img src="img/engage.jpg" alt="engage">
+            <i class="fa fa-envira" aria-hidden="true"></i>
           </div>
           <div class="content">
             <h3>Engage</h3>
@@ -340,7 +372,7 @@
         </div>
         <div class="inner">
           <div class="img">
-            <img src="img/commitment.jpg" alt="commitment">
+            <i class="fa fa-thumbs-up" aria-hidden="true"></i>
           </div>
           <div class="content">
             <h3>Commitment</h3>
@@ -349,7 +381,7 @@
         </div>
         <div class="inner">
           <div class="img">
-            <img src="img/innovation.jpg" alt="innovation">
+            <i class="fa fa-rocket" aria-hidden="true"></i>
           </div>
           <div class="content">
             <h3>Innovation</h3>
@@ -451,7 +483,7 @@
 
       <div class="top cf">
         <div class="wrapper">
-          <a href="#">TOP</a>
+          <a href="#top">TOP</a>
         </div>
       </div>
 
@@ -470,5 +502,9 @@
       </div>
     </div>
   </footer>
+
+  <script src="js/jquery.min.js" charset="utf-8"></script>
+  <script src="js/script.js" charset="utf-8"></script>
+  </script>
 </body>
 </html>
