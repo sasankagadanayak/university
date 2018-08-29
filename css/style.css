@@ -71,8 +71,8 @@ header .top-header  li a {
   padding: 12px 20px;
   color: white;
 }
-header .top-header  li a:hover {
-  background: rgba(255, 255, 255, 0.1);
+header .top-header  li:hover {
+  background: #2aace6;
 }
 header .top-header  li:first-child a {
   border-left: 1px solid #44b7eb;
@@ -91,10 +91,10 @@ header .top-header .submenu li a {
   border: none;
   display: none;
 }
-header .top-header .submenu li a:hover {
+header .top-header .submenu li:hover {
   background-color: #169bd6;
 }
-header .top-header .top-nav li:hover > .submenu li a{
+header .top-header .top-nav li:hover > .submenu li a {
   display: block;
 }
 header .top-header .social-icons {
@@ -111,8 +111,7 @@ header .top-header .submenu {
   z-index: 99999;
 }
 header .top-header .submenu li {
-  background: #000;
-  opacity: 0.9;
+  background: #0e225e;
 }
 header .top-header .submenu ul li {
   position: relative;
@@ -147,28 +146,25 @@ header .bottom-header .main-nav span {
 header .bottom-header .main-nav ul li:hover span {
   color: #fff;
 }
-header .bottom-header .main-nav .sub-menu {
+header .bottom-header .main-nav .submenu {
   position: absolute;
+  padding-top: 20px;
+}
+header .bottom-header .main-nav .submenu li {
   left: 0;
   top: 100%;
-}
-header .bottom-header .main-nav .sub-menu li {
   float: none;
-}
-header .bottom-header .main-nav .sub-menu li a {
-  background-color: #000;
-  font-size: 15px;
-  display: block;
+  background: #000;
   width: 200px;
-  border: none;
   display: none;
 }
-header .bottom-header .main-nav li:hover > .sub-menu li a {
+header .bottom-header .main-nav .submenu li a {
+  border: none;
+}
+header .bottom-header .main-nav li:hover .submenu li {
   display: block;
 }
-header .bottom-header .sub-menu li a:hover {
-  background-color: #169bd6;
-}
+
 
 /**************** main-visual **********/
 .main-visual:nth-child(1) {
@@ -519,7 +515,7 @@ header .bottom-header .sub-menu li a:hover {
   transition: 0.5s;
 }
 .events .wrapper.buy button:hover {
-  background: #000;
+  background: #0e225e;
 }
 
 /**************** choose-us **********/
@@ -561,7 +557,7 @@ header .bottom-header .sub-menu li a:hover {
 .blogs-outer .choose-us .accordion:hover {
   background: #169bd6;
   color: #fff;
-  border: none;
+  border: #fff;
 }
 .blogs-outer .choose-us .accordion:hover::after {
   color: #fff;
@@ -609,12 +605,12 @@ header .bottom-header .sub-menu li a:hover {
 }
 .blogs-outer .blogs a:hover {
   background: #262626;
-  border: none;
+  border: 2px solid #fff;
   color: #fff;
 }
 .blogs-outer .blogs .details a:hover {
   background: #262626;
-  border: none;
+  border: 2px solid #fff;
   color: #fff;
 }
 .blogs-outer .blogs .fa {
@@ -792,6 +788,7 @@ footer .research .inner .img .fa {
   margin: 0;
   background: #fff;
   float: left;
+  color: #282828;
 }
 footer .research .inner .img .fa:hover {
   background: #169bd6;
@@ -835,7 +832,7 @@ footer .enroll .enroll-today a {
 footer .enroll .enroll-today a:hover {
   background: #fff;
   color: #000;
-  border: none;
+  border: 2px solid #fff;
   border-radius: 3px;
 }
 footer .enroll .enroll-today .fa {
@@ -949,7 +946,7 @@ footer .top a {
 }
 footer .top a:hover {
   background: #fff;
-  border: none;
+  border: 2px solid #fff;
   color: #212327;
 }
 footer .sub-footer {
@@ -977,7 +974,7 @@ footer .sub-footer .social-links ul li a {
 }
 footer .sub-footer .social-links ul li a:hover {
   background: #fff;
-  border: none;
+  border: 2px solid #fff;
   color: #212327;
 }
 
