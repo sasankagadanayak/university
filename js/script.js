@@ -1,3 +1,6 @@
+/**************************************/
+/*      clikable toggle        */
+/**************************************/
 console.log('inside')
 var navToggle = document.getElementById('navToggle');
 var mobileNav = document.getElementById('mobileNav');
@@ -9,12 +12,13 @@ navToggle.addEventListener('click', function() {
   } else {
     mobileNav.classList.add('open');
   }
-})
+});
 function myfunction(x) {
   x.classList.toggle("change");
 }
-
-// accordion
+/**************************************/
+/*      accordion effectr        */
+/**************************************/
 var acc = document.getElementsByClassName("accordion");
   for(var i = 0; i < acc.length ; i ++) {
     acc[i].addEventListener("click", function(){
@@ -29,6 +33,10 @@ var acc = document.getElementsByClassName("accordion");
       }
     });
   }
+
+  /**************************************/
+  /*      main visual slider        */
+  /**************************************/
 
 var images = [
   'main_visual.jpg',
