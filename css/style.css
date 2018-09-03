@@ -1092,6 +1092,7 @@ footer .sub-footer .social-links ul li a:hover {
   }
   header .bottom-header .logo {
     margin: 0 auto;
+    padding-top: 5px;
   }
   header .bottom-header .main-nav .submenu {
     position: relative;
