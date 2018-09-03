@@ -399,7 +399,7 @@ header .bottom-header .main-nav li:hover .submenu li {
 .campuses .outer .courses {
   background-color: black;
   border-radius: 5px;
-  padding: 20px 30px;
+  padding: 18px 28px;
   border: 2px solid #fff;
   font-size: 18px;
   color: white;
@@ -631,12 +631,12 @@ header .bottom-header .main-nav li:hover .submenu li {
   float: left;
   width: 50%;
   padding-left: 10px;
+  padding-bottom: 50px;
 }
 .blogs-outer .blogs h2 {
   margin: 0;
   font-size: 24px;
   color: #253b80;
-  font-family: rockwell regular;
   float: left;
 }
 .blogs-outer .blogs a {
@@ -763,7 +763,6 @@ header .bottom-header .main-nav li:hover .submenu li {
   font-size: 18px;
   line-height: 18px;
   color: #6e6e6e;
-  font-family: rockwell regular;
 }
 .testimonial .pro-img {
   width: 50%;
@@ -785,20 +784,10 @@ header .bottom-header .main-nav li:hover .submenu li {
   font-size: 14px;
   margin-left: 10px;
 }
-.testimonial .circle {
-  margin-top: 20px;
-  font-size: 12px;
-  text-align: center;
-}
-.testimonial .circle .fa {
-  margin-left: 10px;
-}
-
 /**************** features highlight **********/
 .features-highlight .highlight h1 {
   margin: 0;
   font-size: 21px;
-  font-family: Palatino Linotype Bold;
   text-align: center;
   color: #343434;
   padding-top: 30px;
@@ -1245,6 +1234,7 @@ footer .sub-footer .social-links ul li a:hover {
   }
   .blogs-outer .blogs {
     width: 100%;
+    padding-top: 30px;
   }
   .blogs-outer .blogs .top  h2 {
     margin: 0;

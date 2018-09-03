@@ -41,11 +41,9 @@ var acc = document.getElementsByClassName("accordion");
       }
     });
   }
-
-  /**************************************/
-  /*      main visual slider        */
-  /**************************************/
-
+/**************************************/
+/*      main visual slider        */
+/**************************************/
 var images = [
   'main_visual.jpg',
   'main_visual1.jpg',
@@ -64,8 +62,6 @@ function updateSlider() {
 setInterval(function() {
   updateSlider();
 }, 2000)
-
-
 /**************************************/
 /*      SMOOTH SCROLL FUNCTION        */
 /**************************************/
