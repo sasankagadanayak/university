@@ -1,26 +1,18 @@
 /**************************************/
 /*      clikable toggle        */
 /**************************************/
+console.log('inside')
 var navToggle = document.getElementById('navToggle');
 var mobileNav = document.getElementById('mobileNav');
-var searchToggle = document.getElementById('searchToggle');
-var searchBox = document.getElementById('searchBox');
 
 navToggle.addEventListener('click', function() {
+  console.log('clicked');
   if(mobileNav.classList.contains('open')) {
     mobileNav.classList.remove('open');
   } else {
     mobileNav.classList.add('open');
   }
 });
-searchToggle.addEventListener('click', function() {
-  if(searchBox.classList.contains('open')) {
-    searchBox.classList.remove('open');
-  } else {
-    searchBox.classList.add('open');
-  }
-});
-
 function myfunction(x) {
   x.classList.toggle("change");
 }
