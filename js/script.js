@@ -3,8 +3,6 @@
 /**************************************/
 var navToggle = document.getElementById('navToggle');
 var mobileNav = document.getElementById('mobileNav');
-var searchToggle = document.getElementById('searchToggle');
-var searchBox = document.getElementById('searchBox');
 
 navToggle.addEventListener('click', function() {
   if(mobileNav.classList.contains('open')) {
@@ -13,6 +11,13 @@ navToggle.addEventListener('click', function() {
     mobileNav.classList.add('open');
   }
 });
+
+/**************************************/
+/*      search box functions       */
+/**************************************/
+var searchToggle = document.getElementById('searchToggle');
+var searchBox = document.getElementById('searchBox');
+
 searchToggle.addEventListener('click', function() {
   if(searchBox.classList.contains('open')) {
     searchBox.classList.remove('open');
@@ -21,26 +26,37 @@ searchToggle.addEventListener('click', function() {
   }
 });
 
+// hide search box if clicked outside
+document.addEventListener("click", function(event) {
+  console.log()
+  if (!event.target.closest("#searchBox") && event.target.id != "searchToggle") {
+    console.log('clicked outside')
+    searchBox.classList.remove('open');
+  }
+});
+
 function myfunction(x) {
   x.classList.toggle("change");
 }
+
 /**************************************/
 /*      accordion effectr        */
 /**************************************/
 var acc = document.getElementsByClassName("accordion");
-  for(var i = 0; i < acc.length ; i ++) {
-    acc[i].addEventListener("click", function(){
+for(var i = 0; i < acc.length ; i ++) {
+  acc[i].addEventListener("click", function(){
 
-      this.classList.toggle("active");
+    this.classList.toggle("active");
 
-      var panel = this.nextElementSibling ;
-      if(panel.style.display === "block") {
-        panel.style.display = "none";
-      } else {
-        panel.style.display = "block";
-      }
-    });
-  }
+    var panel = this.nextElementSibling ;
+    if(panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+
 /**************************************/
 /*      main visual slider        */
 /**************************************/
@@ -62,6 +78,7 @@ function updateSlider() {
 setInterval(function() {
   updateSlider();
 }, 2000)
+
 /**************************************/
 /*      SMOOTH SCROLL FUNCTION        */
 /**************************************/

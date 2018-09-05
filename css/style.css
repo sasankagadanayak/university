@@ -105,6 +105,9 @@ header .top-header .social-icons {
 header .top-header .social-icons .actsearch {
   cursor: pointer;
 }
+header .top-header .social-icons .actsearch i {
+  pointer-events: none;
+}
 header .search-box {
   position: absolute;
   background: #E8E8E4;
@@ -566,6 +569,8 @@ header .bottom-header .main-nav li:hover .submenu li {
 /**************** choose-us **********/
 .blogs-outer {
   width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .blogs-outer .choose-us {
   width: 50%;
