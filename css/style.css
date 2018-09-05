@@ -1078,6 +1078,9 @@ footer .sub-footer .social-links ul li a:hover {
     top: 50%;
     transform: translateY(-50%) rotate(-45deg);
   }
+  header .bottom-header .main-nav > ul > li:last-child > a:after {
+    content: none;
+  }
   header .bottom-header .main-nav > ul > li:hover > a:after {
     display: none;
   }
@@ -1109,7 +1112,6 @@ footer .sub-footer .social-links ul li a:hover {
   header .bottom-header .main-nav .submenu .clkopen {
     display: block;
   }
-
 
   /************ main-visual **************/
   .main-visual {
